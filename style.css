@@ -1,0 +1,81 @@
+/* reset default */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *********************** */
+body {
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  font-family: "Arimo";
+  color: #efe;
+  background: #161724;
+  /* font-size: clamp(0.5rem, 1vw, 2rem); */
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding: 2rem;
+  width: clamp(360px, 50%, 800px);
+  /* width: 80%; */
+  margin: 0 auto;
+  border: solid #ccc;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.close {
+  /* background: red; */
+  margin-bottom: 2rem;
+}
+
+.context-container {
+  background: #23252f;
+  border-radius: 8px;
+}
+
+.open-btns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  /* width: clamp(230px, 60%, 980px); */
+
+  margin: 0 auto;
+  flex-direction: row;
+  position: absolute;
+  top: 50px;
+}
+.open {
+  background: #23252f;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 9px;
+  cursor: pointer;
+  border: solid #64ed85;
+}
+.open:hover {
+  color: #64ed85;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  font-size: clamp(0.8rem, 1vw, 2rem);
+}
